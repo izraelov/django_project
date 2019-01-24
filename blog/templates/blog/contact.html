@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/contact.css' %}">
+    <title>Itay Izraelov</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-4" href="/">ITAY IZRAELOV</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+                        <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Login</a>
+                        <!--<a class="nav-item nav-link" href="#">Register</a>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div class="box-contact">
+           <h1>Contact Me</h1>
+            <br>
+            <form id="my_form" method="post">
+                <br>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="form-actions">
+                    <button class="btn btn-primary btn-lg active" type="submit">Send</button>
+                    <a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back</a>
+                </div>
+            </form>
+    </div>
+</body>
+
+</html>

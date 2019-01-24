@@ -1,0 +1,297 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<title>Itay izraelov Resume</title>
+
+<!-- Meta -->
+<meta name="description" content="A few lines about yourself">
+<meta name="keywords" content="web,developer,designer,resume" />
+<meta name="author" content="Itay izraelov">
+
+<!-- CSS Stylesheet -->
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/about.css' %}" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<!--Nav Bar-->
+
+<header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-4" href="/">ITAY IZRAELOV</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+                        <a class="nav-item nav-link" href="{% url 'blog-contact' %}">Contact</a>
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Login</a>
+                        <!--<a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- Begin Wrapper -->
+<div id="wrapper">
+
+<!-- Begin Content Area -->
+<div id="content">
+
+<!-- Begin Header -->
+<header>
+
+<!-- Begin Contact Section -->
+<section id="contact-details">
+
+<!-- Begin Profile Image Section -->
+<div class="header_1">
+<img src="{% static 'blog/css/images/itay.gif' %}" width="250" height="250" alt="Itay izraelov" />
+</div>
+<!-- End Profile Image Section -->
+
+<!-- Begin Profile Information Section -->
+<div class="header_2">
+
+<h1><span>Itay izraelov</span></h1>
+<h3>Software Developer</h3>
+
+<ul class="info_1">
+<li class="address">Holon, Israel</li>
+</ul>
+
+<ul class="info_2">
+<li class="phone">(972) 050-6996055</li>
+<li class="email"><a href="mailto:itayizr@gmail.com">itayizr@gmail.com</a></li>
+<li class="site_url"><a href="http://www.webcodepro.net/about.php" title="itayizr.pythonanywhere.com">www.itayizraelov.com</a></li>
+</ul>
+
+</div>
+<!-- End Profile Information Section -->
+
+</section>
+<!-- End Contact Section -->
+
+</header>
+<!-- End Header -->
+
+<div class="clear">&nbsp;</div>
+
+<!-- Begin Profile Section -->
+<dl>
+<dt>Profile:</dt>
+<dd>
+
+<section class="summary">B.Sc. Computer Science Graduate from Ariel University.
+Autodidact, self-disciplined, highly motivated and eager to learn.
+Equally comfortable working as a member of a team and independently.
+Interested in a challenging position to further my skills and maximize my abilities.
+</section>
+
+</dd>
+</dl>
+<!-- End Profile Section -->
+
+<div class="clear">&nbsp;</div>
+
+<!-- Begin Skills Section -->
+
+<dl>
+<dt>Skills:</dt>
+<dd>
+
+<section id="skills">
+<ul class="list1">
+<li>HTML</li>
+<li>CSS</li>
+<li>PHP</li>
+<li>JavaScript</li>
+<li>Django</li>
+<li>WordPress</li>
+</ul>
+<ul class="list2">
+<li>Deep learning</li>
+<li>Networking</li>
+<li>OOP</li>
+<li>IOT</li>
+<li>Databases</li>
+<li>Operating Systems</li>
+</ul>
+    <ul class="list2">
+<li>Python</li>
+<li>Java</li>
+<li>C++</li>
+<li>C</li>
+
+</ul>
+</section>
+
+</dd>
+</dl>
+
+<!-- End Skills Section -->
+
+<div class="clear">&nbsp;</div>
+
+<!-- Begin Experience Section -->
+<dl>
+<dt>Experience / Projects:</dt>
+
+<dd>
+
+<section id="experience">
+
+<!-- Position #1 -->
+
+<h2 class="top">Teacher: Web Development </h2>
+<p class="bus1">Ariel University</p>
+<p class="time">February 2017 &#45; January 2018</p>
+
+<p>
+● Understating basic web application.<br>
+● Using HTML and CSS.<br>
+● Including project during which I accompanied the students to a successful and working web site.
+</p>
+
+
+<!-- Position #2 -->
+
+<h2>Final Project</h2>
+<p class="bus1">Ariel University</p>
+<p class="time">September 2018</p>
+
+<p>
+Machine Learning algorithm for Dental Image Analysis using TensorFlow, which recognizes abnormal findings such as dental caries and other benign or malignant hard tissue lesions in the jaw from the x-ray radiographs (python).</p>
+
+
+<!-- Position #3 -->
+
+<h2>Android Project</h2>
+<p class="bus1">Ariel University</p>
+<p class="time">March 2017</p>
+
+<p>
+Android Application for virtual store (Android studio).</p>
+
+<!-- Position #4 -->
+
+<h2>IOT Projects:</h2>
+<p class="bus1">Ariel University</p>
+<p class="time">March 2017</p>
+
+<p>
+• Smart medicine box for pill reminder (ESP32 Arduino, Python, Android studio).<br>
+• Autonomous vehicle (Raspberry pi, Apsync Linux, python).
+</section>
+
+</dd>
+</dl>
+<!-- End Experience Section -->
+
+<div class="clear">&nbsp;</div>
+
+<!-- Begin Publications Section -->
+<dl>
+<dt>Military Service:</dt>
+
+<dd>
+
+<section id="publications">
+
+    <h6 class="top">Navy, Daburim Combat Unit. The service including a paramedics course. </h6>
+    <p class="bus1">Israeli Navy</p>
+    <p class="time">January 2011 &#45; January 2014</p>
+
+</section>
+
+</dd>
+</dl>
+<!-- End Publications Section -->
+
+<div class="clear">&nbsp;</div>
+
+<!-- Begin Education Section -->
+<dl>
+<dt>Education:</dt>
+<dd>
+
+<section id="education">
+
+<p class="bus1">Ariel University</p>
+
+<p class="time">October 2015 &#45; October 2018</p>
+Ariel , Israel.
+
+<p class="summary"><b>Platforms:</b></p>
+Firebase, Bootstrap, jQuery, TensorFlow, Eclipse, Visual studio, Intelligate, Pycharm, Android studio, Atom, Wireshark.
+    <p class="summary"><b>Technologies/Environment:</b></p>
+    Windows, Linux (Ubuntu).
+Miscellaneous: Git, Computer hardware.
+
+<p class="edu-info">
+
+</p>
+
+</section>
+
+</dd>
+</dl>
+<!-- End Education Section -->
+
+<div class="clear">&nbsp;</div>
+
+<!-- Begin Footer -->
+<footer id="footer">
+
+<!-- Begin Footer Content -->
+<div class="footer_content">
+
+<!-- Begin Schema Person -->
+
+<ul class="icons_1">
+<li><a href="https://plus.google.com/u/0/111751345927105072264" title="Google Profile"><img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32" alt="Google Profile"></a></li>
+<li><a href="http://www.linkedin.com/" title="LinkedIn"><img src="{% static 'blog/css/images/linkedin.png' %}" width="32" height="32" alt="LinkedIn" /></a></li>
+<li><a href="http://www.facebook.com/" title="Facebook"><img src="{% static 'blog/css/images/facebook.png' %}" width="32" height="32" alt="Facebook" /></a></li>
+<li><a href="https://github.com/izraelov" title="Follow Me on GITHUB!"><img src="{% static 'blog/css/images/github.png' %}" width="32" height="32" alt="Follow Me on Twitter!" /></a></li>
+</ul>
+
+<ul class="icons_2">
+<li><a href="{% static 'blog/files/ITAY_CV.pdf' %}" title="Download Resume PDF"><img src="{% static 'blog/css/images/download.png' %}" width="48" height="48" alt="Download Resume PDF" /></a></li>
+</ul>
+
+<!-- End Schema Person -->
+
+</div>
+<!-- End Footer Content -->
+
+
+
+</footer>
+<!-- End Footer -->
+
+</div>
+<!-- End Content -->
+
+</div>
+<!-- End Wrapper -->
+
+</body>
+</html>
+
